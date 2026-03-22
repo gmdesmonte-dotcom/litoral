@@ -42,11 +42,16 @@ header{
 
 .banner-content{
   position:absolute;
-  top:75%;
+  bottom:60px;
   left:50%;
-  transform:translate(-50%, -50%);
+  transform:translateX(-50%);
   text-align:center;
   color:white;
+}
+
+.banner-content h1,
+.banner-content p{
+  text-shadow:2px 2px 5px rgba(0,0,0,0.7);
 }
 
 .banner-content h1{
@@ -175,12 +180,19 @@ footer{
   </div>
 </section>
 
+<h2 style="text-align:center; margin-top:20px;">
+🚗 Peças automotivas usadas com procedência e garantia
+</h2>
+
 <!-- SERVIÇOS -->
 <section class="services">
   <h2>Nossos Serviços</h2>
   <p>
     A Litoral Eco Peças é especializada na venda de peças automotivas usadas com procedência e garantia em Praia Grande. Trabalhamos com motores, câmbios, lataria e diversos componentes automotivos.
   </p>
+
+
+  <p><strong>Empresa legalizada para comércio de peças automotivas usadas.</strong></p>
 </section>
 
 <!-- CTA -->
@@ -191,11 +203,11 @@ footer{
 <!-- AVALIAÇÕES -->
 <section class="reviews">
   <h2>Avaliações</h2>
-  <p>⭐ João Silva - Atendimento rápido!</p>
-  <p>⭐ Maria Souza - Produto excelente</p>
-  <p>⭐ Carlos Lima - Recomendo</p>
-  <p>⭐ Ana Paula - Ótima loja</p>
-  <p>⭐ Roberto Alves - Voltarei a comprar</p>
+  <p>⭐ Cliente verificado - Atendimento rápido!</p>
+  <p>⭐ Cliente de Praia Grande - Produto excelente</p>
+  <p>⭐ Cliente satisfeito - Recomendo</p>
+  <p>⭐ Compra recente - Ótima loja</p>
+  <p>⭐ Cliente fiel - Voltarei a comprar</p>
 </section>
 
 <!-- GALERIA -->
@@ -212,6 +224,12 @@ footer{
 <h2>Solicitar Peça</h2>
 
 <form action="https://formsubmit.co/contato@litoralecopecas.site" method="POST">
+
+<input type="hidden" name="_captcha" value="false">
+<input type="hidden" name="_subject" value="Novo cliente pelo site!">
+
+<input type="hidden" name="_next" value="https://litoralecopecas.site/obrigado.html">
+
 
 <input type="text" name="nome" placeholder="Seu nome" required>
 <input type="tel" name="telefone" placeholder="Telefone / WhatsApp" required>
@@ -239,17 +257,22 @@ footer{
 
 <!-- RODAPÉ -->
 <footer>
+
 <div class="footer-links">
   <a href="sobre.html">Sobre Nós</a>
   <a href="termos.html">Termos de Uso</a>
   <a href="politica.html">Política de Privacidade</a>
+
+  <span>📞 Telefone: (13) 99679-9973</span>
+  <span>📧 contato@litoralecopecas.site</span>
   <span>CNPJ: 62.830.578/0001-22</span>
-  <span>Rua Herbert de Souza, 272 - Praia Grande/SP</span>
+  <span>📍 Rua Herbert de Souza, 272 - Praia Grande/SP</span>
 </div>
+
 </footer>
 
 <!-- BOTÃO FLUTUANTE -->
-<a href="https://wa.me/5513996799973" class="float">Fala Agora</a>
+<a href="https://wa.me/5513996799973" class="float">Falar no WhatsApp</a>
 
 </body>
 </html>
