@@ -248,26 +248,24 @@ Solicitar Orçamento
 
 <form action="https://formsubmit.co/contato@litoralecopecas.site" method="POST">
 
-<input type="hidden" name="_captcha" value="true">
-<input type="hidden" name="_subject" value="Novo cliente pelo site!">
+  <input type="hidden" name="_captcha" value="true">
+  <input type="hidden" name="_subject" value="Novo cliente pelo site!">
+  <input type="hidden" name="_next" value="https://litoralecopecas.site/obrigado.html">
 
-<input type="hidden" name="_next" value="https://litoralecopecas.site/obrigado.html">
+  <input type="text" name="nome" placeholder="Seu nome" required>
+  <input type="tel" name="telefone" placeholder="Telefone / WhatsApp" required>
+  <input type="text" name="endereco" placeholder="Seu endereço (opcional)">
+  <input type="text" name="peca" placeholder="Qual peça você precisa?" required>
+  <textarea name="mensagem" placeholder="Detalhes da peça (opcional)"></textarea>
 
+  <div style="margin-top:15px;">
+    <label style="display:flex; align-items:center; gap:10px; font-size:14px;">
+      <input type="checkbox" name="termos" required style="width:auto;">
+      <span>Aceito os termos de uso e política de privacidade</span>
+    </label>
+  </div>
 
-<input type="text" name="nome" placeholder="Seu nome" required>
-<input type="tel" name="telefone" placeholder="Telefone / WhatsApp" required>
-<input type="text" name="endereco" placeholder="Seu endereço (opcional)">
-<input type="text" name="peca" placeholder="Qual peça você precisa?" required>
-<textarea name="mensagem" placeholder="Detalhes da peça (opcional)"></textarea>
-
-<div style="margin-top:15px;">
-  <label style="display:flex; align-items:center; gap:10px; font-size:14px;">
-    <input type="checkbox" required style="width:auto;">
-    <span>Aceito os termos de uso e política de privacidade</span>
-  </label>
-</div>
-
-<button class="btn" style="width:100%;">Enviar Solicitação</button>
+  <button type="submit" class="btn" style="width:100%;">Enviar Solicitação</button>
 
 </form>
 </section>
