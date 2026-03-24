@@ -248,16 +248,22 @@ Solicitar Orçamento
 
 <form action="https://formsubmit.co/contato@litoralecopecas.site" method="POST">
 
+  <!-- Configurações do Formsubmit -->
   <input type="hidden" name="_captcha" value="false">
-  <input type="hidden" name="_subject" value="Novo cliente pelo site!">
+  <input type="hidden" name="_subject" value="📩 Novo Pedido de Peça - Litoral Eco Peças">
   <input type="hidden" name="_next" value="https://litoralecopecas.site/obrigado.html">
+  <input type="hidden" name="_template" value="table">
+  <input type="hidden" name="_hidden" value="termos">
+  <input type="hidden" name="_body" value="Olá equipe! Recebemos um novo pedido de peça no site. Confira os detalhes do cliente abaixo.">
 
+  <!-- Campos do formulário -->
   <input type="text" name="nome" placeholder="Seu nome" required>
   <input type="tel" name="telefone" placeholder="Telefone / WhatsApp" required>
   <input type="text" name="endereco" placeholder="Seu endereço (opcional)">
   <input type="text" name="peca" placeholder="Qual peça você precisa?" required>
   <textarea name="mensagem" placeholder="Detalhes da peça (opcional)"></textarea>
 
+  <!-- Checkbox de termos -->
   <div style="margin-top:15px;">
     <label style="display:flex; align-items:center; gap:10px; font-size:14px;">
       <input type="checkbox" name="termos" required style="width:auto;">
@@ -265,6 +271,7 @@ Solicitar Orçamento
     </label>
   </div>
 
+  <!-- Botão -->
   <button type="submit" class="btn" style="width:100%;">Enviar Solicitação</button>
 
 </form>
